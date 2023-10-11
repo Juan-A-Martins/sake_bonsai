@@ -66,8 +66,8 @@ public class TrataClienteController extends Thread{
                 }else if (comando.equalsIgnoreCase("listaProduto")) {
                     System.out.println("entrei aqui");
                     ProdutoDao produtoDao = new ProdutoDao();
-                    ArrayList<Produto> listaProdutos = produtoDao.getLista();
-                    out.writeObject(listaProdutos);
+                    ArrayList<Produto> listaUsuarios = produtoDao.getLista();
+                    out.writeObject(listaUsuarios);
                 }
                 
                 

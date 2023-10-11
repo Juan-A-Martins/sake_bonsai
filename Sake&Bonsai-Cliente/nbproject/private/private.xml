@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/modelDominio/Cliente.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/TelaLogin.java</file>
+            <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/TelaMenu.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/TelaProduto.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/modelDominio/Produto.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/util/ProdutoTableModel.java</file>
@@ -12,6 +13,7 @@
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/modelDominio/Usuario.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/TelaUsuario.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/TelaAdicionarProduto.java</file>
+            <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/TelaPedido.java</file>
             <file>file:/C:/Users/aluno/Documents/NetBeansProjects/Sake&amp;Bonsai-Cliente/src/view/util/UsuarioTableModel.java</file>
         </group>
     </open-files>
