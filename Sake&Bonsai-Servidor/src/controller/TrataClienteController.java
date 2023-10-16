@@ -62,12 +62,17 @@ public class TrataClienteController extends Thread{
                     String nome = (String) in.readObject();
                     UsuarioDao userDao = new UsuarioDao();
                     out.writeObject(userDao.usuarioListaNome(nome));
-                    
                 }else if (comando.equalsIgnoreCase("listaProduto")) {
                     System.out.println("entrei aqui");
                     ProdutoDao produtoDao = new ProdutoDao();
                     ArrayList<Produto> listaUsuarios = produtoDao.getLista();
                     out.writeObject(listaUsuarios);
+                }else if (comando.equalsIgnoreCase("produtoListaNome")) {
+                    out.writeObject("ok");
+                    String nome = (String) in.readObject();
+                    ProdutoDao produtoDao = new ProdutoDao();
+                    out.writeObject(produtoDao.listarPNomeProduto(nome));
+                    
                 }
                 
                 

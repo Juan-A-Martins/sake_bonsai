@@ -8,6 +8,7 @@ import factory.Conector;
 import java.sql.*;
 import java.util.ArrayList;
 import modelDominio.Produto;
+import modelDominio.Usuario;
 
 /**
  *
@@ -151,6 +152,36 @@ public class ProdutoDao {
                 return false;
             }
 
+        }
+    }
+    public ArrayList<Produto> listarPNomeProduto(String nome) {
+        PreparedStatement stmt = null;
+        ArrayList<Produto> listaProdutoNome = new ArrayList<>();
+
+        try {
+            String sql = "select * from produto where nomeProduto like ? ";
+
+            stmt = con.prepareStatement(sql);
+            stmt.setString(1, "%" + nome + "%");
+
+            ResultSet res = stmt.executeQuery();
+
+            while (res.next()) {
+                Produto produto = new Produto(res.getInt("codProduto"), res.getString("nomeProduto"));
+
+                listaProdutoNome.add(produto);
+
+                System.out.println(produto);
+            }
+
+            res.close();
+            stmt.close();
+            con.close();
+            return listaProdutoNome;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }
